@@ -9,6 +9,12 @@ variable "acl" {
 	default 	= "private"
 }
 
+variable "versioning" {
+	type = bool
+	description = "Versioning true/false"
+	default = false
+}
+
 variable "tags" {
 	type		= map
 	description = "A mapping of tags to assign to the bucket."
